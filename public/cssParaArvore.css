@@ -1,0 +1,313 @@
+/*ESTILOS*/  
+input[type=text] {
+	width: 20%;
+	padding: 10;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+
+input[type=text]:focus {
+	border: 3px solid #555;
+	
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.texto {
+  font-family: Verdana;
+  font-weight: 100;
+  margin: 30px;
+  
+}
+
+/* Style the header */
+.header {
+  padding: 10px;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 200;
+  font-variant: small-caps; 
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  font-family: arial;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style the footer*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50px;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   font-family: arial;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*ESTILOS DO FUNCIONAMENTO DA ÁRVORE*/  
+body{ 
+	background-image: url("imagem/imagem1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1200px 800px;
+
+}
+
+figure{
+		width:800px;
+		padding:80px;
+		border:white 2px solid;
+}
+
+
+#idFolha0{
+				padding: 5px;
+				position: absolute; 
+				margin-left:1100px; 
+				margin-top:0px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+
+
+
+#idFolha1{
+				padding: 5px;
+				position: absolute;
+				margin-left:1100px; 
+				margin-top:40px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+				
+			}
+			
+#idFolha2{
+				padding: 5px;
+				position: absolute;
+				margin-left:580px; 
+				margin-top:20px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+			
+#idFolha3{
+				padding: 5px;
+				position: absolute;
+				margin-left:640px; 
+				margin-top:15px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+			
+#idFolha4{
+				padding: 5px;
+				position: absolute;
+				margin-left:700px; 
+				margin-top:15px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+			
+
+			
+#idRamo0{
+				padding: 5px;
+				position: absolute;
+				margin-left:626px; 
+				margin-top:100px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+
+#idRamo1{		padding: 5px;
+				position: absolute;
+				position: absolute;
+				margin-left:700px; 
+				margin-top:130px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+			
+			
+#idRamo2{
+				padding: 5px;
+				position: absolute;
+				margin-left:550px; 
+				margin-top:130px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+			
+			
+
+			
+			
+
+#idTronco0{
+				padding: 5px;
+				position: absolute; 
+				margin-left:626px; 
+				margin-top:295px;  
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+
+		
+#idTronco1{
+				padding: 5px;
+				position: absolute; 
+				margin-left:626px; 
+				margin-top:255px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+			
+#idTronco2{
+				padding: 5px;
+				position: absolute; 
+				margin-left:626px; 
+				margin-top:210px;
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+	
+#idTronco3{
+				padding: 5px;
+				position: absolute; 
+				margin-left:626px; 
+				margin-top:210px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}
+			
+#idTronco4{
+				padding: 5px;
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:110px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+				border: 1px solid green;
+				background-color: green;
+				text-align: center;
+				color:darkgreen;
+				font-size:20px;
+				font-family: Arial Black;
+			}

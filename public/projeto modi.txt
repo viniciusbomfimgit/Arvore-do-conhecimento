@@ -1,0 +1,434 @@
+/////////// VERSÃO 2
+
+<!Doctype html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="ISO-88591"/>
+		<title> Projeto IHC </title>
+		<link rel="stylesheet" href="css.css">
+		<script src = "js.js"></script>	
+		<style>
+			
+		</style>
+	</head>
+	
+	<header>
+	<form action="javascript: enviar();">
+				Grau: <input id ="comp" type="text" class="input-name" name="name">
+				Competência: <input id ="comp2" type="text" class="input-name2" name="name2">
+				<input type="submit" value="Enviar">
+				
+		</form>	
+	<li><a href="arvore.html" style="color: white" target="alvo"> Arvore  </a></li>
+	</header>
+
+	<body>		
+	
+		 
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+var nFolha = 0 //numero no fim do id, para fins de diferenciacao
+var nTronco = 0 
+var nRaiz = 0
+
+function enviar(){
+    var nomeValue = document.querySelector(".input-name").value;
+	var nomeValue2 = document.querySelector(".input-name2").value;
+	
+    var formValue = {                                 
+        name: nomeValue,
+		name2: nomeValue2,
+	}
+
+	var id = ""
+	var classe = ""
+
+	//avaliar tipo de competencia
+	if(nomeValue == "Raiz"){
+		id="idRaiz" + nRaiz; nRaiz++; classe = "Raiz"
+		var newDiv = document.createElement('div');
+		newDiv.id = id;
+		newDiv.className = classe;
+		document.getElementsByTagName('body')[0].appendChild(newDiv);
+		newDiv.innerHTML = nomeValue2
+	}
+	
+	if(nomeValue == "Tronco"){
+		id = "idTronco" + nTronco; nTronco++; classe= "Tronco"
+		var newDiv = document.createElement('div');
+		newDiv.id = id;
+		newDiv.className = classe;
+		document.getElementsByTagName('body')[0].appendChild(newDiv);
+		newDiv.innerHTML = nomeValue2
+	}
+	
+	
+	if(nomeValue == "Folha"){
+		 id = "idFolha" + nFolha; nFolha++; classe = "Folha"
+		 var newDiv = document.createElement('div');
+		newDiv.id = id;
+		newDiv.className = classe;
+		document.getElementsByTagName('body')[0].appendChild(newDiv);
+		newDiv.innerHTML = nomeValue2
+	}			
+
+	//criar div da competencia
+	
+}
+
+
+
+
+
+
+body{ background-image: url("imagem/imagem1.jpg")  ;
+	  background-attachment: fixed;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: 1200px 800px;
+	  
+	
+
+}
+
+figure{
+		width:800px;
+		padding:80px;
+		border:white 2px solid;
+}
+
+
+#idFolha0{
+				position: absolute; 
+				margin-left:400px; 
+				margin-top:60px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+
+
+
+#idFolha1{
+				position: absolute;
+				margin-left:460px; 
+				margin-top:40px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+#idFolha2{
+				position: absolute;
+				margin-left:580px; 
+				margin-top:20px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+#idFolha3{
+				position: absolute;
+				margin-left:640px; 
+				margin-top:15px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+#idFolha4{
+				position: absolute;
+				margin-left:700px; 
+				margin-top:15px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+
+			
+#idRamo0{
+				position: absolute;
+				margin-left:580px; 
+				margin-top:150px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+
+#idRamo1{
+				position: absolute;
+				margin-left:700px; 
+				margin-top:70px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+			
+#idRamo2{
+				position: absolute;
+				margin-left:500px; 
+				margin-top:50px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+			
+#idRamo3{
+				position: absolute;
+				margin-left:500px; 
+				margin-top:50px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+#idRamo4{
+				position: absolute;
+				margin-left:500px; 
+				margin-top:50px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+
+#idTronco0{
+				position: absolute; 
+				margin-left:640px; 
+				margin-top:420px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+
+		
+#idTronco1{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:200px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+#idTronco2{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:110px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+	
+#idTronco3{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:110px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+#idTronco4{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:110px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+//////// VERSÃO 1
+
+
+
+
+<!Doctype html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="ISO-88591"/>
+		<title> Projeto IHC </title>
+		<link rel="stylesheet" href="css.css">
+		<script src = "js.js"></script>	
+		<style>
+			
+		</style>
+	</head>
+	
+	<header>
+	<form action="javascript: enviar();">
+				Competência: <input id ="comp" type="text" class="input-name" name="name">
+				<input type="submit" value="Enviar">
+		</form>	
+	<li><a href="arvore.html" style="color: white" target="alvo"> Arvore  </a></li>
+	</header>
+
+	<body>		
+	
+		 
+	</body>
+
+</html>
+
+
+
+
+
+
+var nFolha = 0 //numero no fim do id, para fins de diferenciacao
+var nTronco = 0 
+var nRaiz = 0
+
+function enviar(){
+    var nomeValue = document.querySelector(".input-name").value;
+	
+    var formValue = {                                 
+        name: nomeValue,
+	}
+
+	var id = ""
+	var classe = ""
+
+	//avaliar tipo de competencia
+	if(nomeValue == "nomeRaiz"){
+		id="idRaiz" + nRaiz; nRaiz++; classe = "Raiz"
+		var newDiv = document.createElement('div');
+		newDiv.id = id;
+		newDiv.className = classe;
+		document.getElementsByTagName('body')[0].appendChild(newDiv);
+		newDiv.innerHTML = nomeValue
+	}
+	
+	if(nomeValue == "nomeTronco"){
+		id = "idTronco" + nTronco; nTronco++; classe= "Tronco"
+		var newDiv = document.createElement('div');
+		newDiv.id = id;
+		newDiv.className = classe;
+		document.getElementsByTagName('body')[0].appendChild(newDiv);
+		newDiv.innerHTML = nomeValue
+	}
+	
+	
+	if(nomeValue == "nomeFolha"){
+		 id = "idFolha" + nFolha; nFolha++; classe = "Folha"
+		 var newDiv = document.createElement('div');
+		newDiv.id = id;
+		newDiv.className = classe;
+		document.getElementsByTagName('body')[0].appendChild(newDiv);
+		newDiv.innerHTML = nomeValue
+	}			
+
+	//criar div da competencia
+	
+}
+
+
+
+
+
+
+
+body{ background-image: url("imagem/imagem1.jpg")  ;
+	  background-attachment: fixed;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: 1200px 800px;
+	  
+	
+
+}
+
+figure{
+		width:800px;
+		padding:80px;
+		border:white 2px solid;
+}
+
+
+#idFolha0{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:10px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+
+
+
+#idFolha1{
+				position: absolute;
+				margin-left:500px; 
+				margin-top:30px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+
+			
+#idTronco0{
+				position: absolute;
+				margin-left:500px; 
+				margin-top:50px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+
+
+#idTronco1{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:70px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+
+#idRaiz0{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:90px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+
+		
+#idRaiz1{
+				position: absolute; 
+				margin-left:500px; 
+				margin-top:110px; 
+				width: 10px; 
+				height: 10px; 
+				z-index:4;
+			}
+			
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Árvore do Conhecimento </title>
+		<link rel="stylesheet" href="cssParaArvore.css">			
+	</head>
+		
+	<!--Cabeçalho padrao-->
+	<div class="header">
+		<h1>Árvore do Conhecimento</h1>
+	</div>
+	<!--Fim Cabeçalho-->
+	
+	<body>
+		<form action="javascript: enviar();"> 
+			<label>Grau</label><br/>
+			<select name="select" id="comp" type="text" class="input-name" name="name">
+				<option selected>--Selecione um grau da árvore--</option>
+				<option value="Tronco">Tronco</option>
+				<option value="Ramo">Ramo</option>
+				<option value="Folha">Folha</option>
+			</select>
+			
+			<br/>
+			<label>Competência</label>
+			<br/>
+			<input id ="comp2" type="text" class="input-name2" name="name2">
+			<input type="submit" value="Enviar">
+			
+		</form>	
+		<li>
+			<a href="listacomunidades.html" style="color:black" target="alvo"/>
+		</li>
+
+		<br/>
+
+		<br/>
+		<input type="button" value="Ir para as Árvores de competências" action="listacomunidades.html">
+		<br/>
+		<a href="Home.html">Voltar à homepage</a>
+
+		<script src="js.js"/>
+		<script src = "jsformulario.js"></script>		
+	</body>
+
+</html>
